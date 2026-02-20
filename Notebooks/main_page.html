@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>World Happiness Report</title>
+<style>
+html, body {
+    height:100%;
+}
+
+
+body {
+    margin:0;
+    padding:0;
+    min-height:100%;
+    background-color:#EEF7F0;
+}
+
+.js-plotly-plot, .plotly, .plot-container {
+    background: transparent !important;
+}
+
+.viewx-slot {
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 0.2s ease;
+    display:flex;
+    flex-direction:column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.viewx-slot:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.plotly-graph-div {
+    width:100% !important;
+    height:100% !important;
+}
+
+.js-plotly-plot {
+    width:100% !important;
+    height:100% !important;
+}
+
+.plot-container, .svg-container {
+    width:100% !important;
+    height:100% !important;
+}
+
+
+
+        .parent {
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, minmax(0, 1fr));
+            width:100vw;
+            height:100vh;
+            box-sizing:border-box;
+
+            min-height: 100vh;
+
+            align-items: stretch;
+            justify-items: stretch;
+        }
+        
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 3 / 1 / 4 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 3 / 2 / 4 / 3; }
+
+table Ellipsis
+th, td Ellipsis
+
+</style>
+</head>
+
+<body>
+<div class="parent">
+<div class="div1 viewx-slot">
+        <div style="
+            background:#EEF7F0;
+            color:#1B4332;
+            border:1px solid #1B433222;
+            padding:14px;
+            border-radius:12px;
+            width:100%; height:100%;
+            box-sizing:border-box;
+            line-height:1.5;
+            overflow:auto;
+            font-family:Arial;
+        ">
+            
+    <style>
+        title {
+            transition: 0.3s ease;
+        }
+        .title:hover {
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+    </style>
+    <div style="align-items: center;">
+        <h1 class = "title" style = "
+                    text-align: center; 
+                    font-size: 90px;
+                    ">
+                    World Happiness Report
+        </h1>
+    </div>
+    
+        </div>
+        </div><div class="div2 viewx-slot">
+        <div style="
+            background:#EEF7F0;
+            color:#1B4332;
+            border:1px solid #1B433222;
+            padding:14px;
+            border-radius:12px;
+            width:100%; height:100%;
+            box-sizing:border-box;
+            line-height:1.5;
+            overflow:auto;
+            font-family:Arial;
+        ">
+             
+    <style>
+    .button_dataset:hover {
+        opacity: 0.9;
+        transform: scale(1.5);
+    }
+
+    .img-dataset:hover {
+        transform: scale(1.15) rotate(3deg);
+        filter: brightness(1.2) drop-shadow(0px 4px 10px rgba(0,0,0,0.4));
+    }
+
+    h1,
+    h2 {
+        transition: 0.3s ease;
+    }
+
+    h1:hover,
+    h1:hover {
+        transform: scale(1.15);
+        transition: 0.3s;
+    }
+
+    </style>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+
+        <div style="
+                align-items: center; 
+                justify-content: center; 
+                margin-left: 20%;
+                margin-top: 5%;
+                margin-bottom: 5%">
+            <h1 style="font-size: 40px; margin: 0;">Dataset World</h1>
+            <h1 style="font-size: 40px; margin: 0;">Happiness</h1>
+
+            <a href="https://ghostanalyst30.github.io/World-Happiness-Report/paginas_web/dataset_page.html">
+                <button class = "button_dataset" style="
+                    background-color: #2D6A4F;
+                    color: white;
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    margin-top: 15px;
+                    align-items: center;">
+                    Dataset
+                </button>
+            </a>
+        </div>
+
+        <img src="https://ghostanalyst30.github.io/World-Happiness-Report/paginas_web/gifs_paginas_web/estadisticas.gif" class="img-dataset"
+            style="
+                width: 150px; 
+                height: 150px;
+                margin-right: 10%;
+                margin-left: 10%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                transition: all 0.3s ease;">
+
+    </div>
+
+    
+        </div>
+        </div><div class="div3 viewx-slot">
+        <div style="
+            background:#EEF7F0;
+            color:#1B4332;
+            border:1px solid #1B433222;
+            padding:14px;
+            border-radius:12px;
+            width:100%; height:100%;
+            box-sizing:border-box;
+            line-height:1.5;
+            overflow:auto;
+            font-family:Arial;
+        ">
+             
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+
+        <div style="
+                align-items: center; 
+                justify-content: center; 
+                margin-left: 20%;
+                margin-top: 5%;
+                margin-bottom: 5%">
+            <h1 style="font-size: 40px; margin: 0;">What happend</h1>
+            <h1 style="font-size: 40px; margin: 0;">with Colombia?</h1>
+
+            <a href="https://ghostanalyst30.github.io/World-Happiness-Report/paginas_web/colombia.html">
+                <button class = "button_dataset" style="
+                    background-color: #2D6A4F;
+                    color: white;
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    margin-top: 15px;
+                    align-items: center;">
+                    Colombia
+                </button>
+            </a>
+        </div>
+
+        <img src="https://ghostanalyst30.github.io/World-Happiness-Report/paginas_web/gifs_paginas_web/colombia.gif" class="img-dataset"
+            style="
+                width: 150px; 
+                height: 150px;
+                margin-right: 10%;
+                margin-left: 10%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                transition: all 0.3s ease;">
+
+    </div>
+
+    
+        </div>
+        </div><div class="div4 viewx-slot">
+        <div style="
+            background:#EEF7F0;
+            color:#1B4332;
+            border:1px solid #1B433222;
+            padding:14px;
+            border-radius:12px;
+            width:100%; height:100%;
+            box-sizing:border-box;
+            line-height:1.5;
+            overflow:auto;
+            font-family:Arial;
+        ">
+             
+    <div style="display: flex; align-items: right; justify-content: space-between;">
+
+        <img src="https://ghostanalyst30.github.io/World-Happiness-Report/paginas_web/gifs_paginas_web/feliz.gif" class="img-dataset"
+            style="
+                width: 150px; 
+                height: 150px;
+                margin-right: 10%;
+                margin-left: 10%;
+                margin-top: 5%;
+                margin-bottom: 5%;  
+                transition: all 0.3s ease;">
+
+        <div style="
+                text-align: right; 
+                justify-content: right; 
+                margin-right: 20%;
+                margin-top: 5%;
+                margin-bottom: 5%">
+            <h1 style="font-size: 40px; margin: 0; text-align: right;">The Happiest</h1>
+            <h1 style="font-size: 40px; margin: 0; text-align: right;">Countries</h1>
+
+            <a href="https://ghostanalyst30.github.io/World-Happiness-Report/paginas_web/dataset_page.html">
+                <button class = "button_dataset" style="
+                    background-color: #2D6A4F;
+                    color: white;
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    margin-top: 15px;
+                    align-items: right;">
+                    Dataset
+                </button>
+            </a>
+        </div>
+
+
+    </div>
+    
+        </div>
+        </div><div class="div5 viewx-slot">
+        <div style="
+            background:#EEF7F0;
+            color:#1B4332;
+            border:1px solid #1B433222;
+            padding:14px;
+            border-radius:12px;
+            width:100%; height:100%;
+            box-sizing:border-box;
+            line-height:1.5;
+            overflow:auto;
+            font-family:Arial;
+        ">
+            
+    <div style="display: flex; align-items: right; justify-content: space-between;">
+
+        <img src="https://ghostanalyst30.github.io/World-Happiness-Report/paginas_web/gifs_paginas_web/triste.gif" class="img-dataset"
+            style="
+                width: 150px; 
+                height: 150px;
+                margin-right: 10%;
+                margin-left: 10%;
+                margin-top: 5%;
+                margin-bottom: 5%;  
+                transition: all 0.3s ease;">
+
+        <div style="
+                text-align: right; 
+                justify-content: right; 
+                margin-right: 20%;
+                margin-top: 5%;
+                margin-bottom: 5%">
+            <h1 style="font-size: 40px; margin: 0; text-align: right;">The Unhappiest</h1>
+            <h1 style="font-size: 40px; margin: 0; text-align: right;">Countries</h1>
+
+            <a href="https://ghostanalyst30.github.io/World-Happiness-Report/paginas_web/dataset_page.html">
+                <button class = "button_dataset" style="
+                    background-color: #2D6A4F;
+                    color: white;
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    margin-top: 15px;
+                    align-items: right;">
+                    Dataset
+                </button>
+            </a>
+        </div>
+    </div>
+    
+        </div>
+        </div><div class="div6 viewx-slot"></div>
+</div>
+
+<script>
+function resizePlot(plot){
+    const parent = plot.parentElement;
+    const rect = parent.getBoundingClientRect();
+
+    // 1) Forzar altura real en el div plotly
+    plot.style.height = rect.height + "px";
+    plot.style.width  = rect.width + "px";
+
+    // 2) Ahora sí Plotly recalcula correctamente
+    Plotly.Plots.resize(plot);
+}
+
+function viewx_resize_all(){
+    document.querySelectorAll(".plotly-graph-div").forEach(resizePlot);
+}
+
+function attach(){
+    const plots = document.querySelectorAll(".plotly-graph-div");
+
+    if(!plots.length){
+        requestAnimationFrame(attach);
+        return;
+    }
+
+    const ro = new ResizeObserver(entries => {
+        for (const entry of entries) {
+            const plots = entry.target.querySelectorAll(".plotly-graph-div");
+            plots.forEach(resizePlot);
+        }
+    });
+
+    document.querySelectorAll(".viewx-slot").forEach(el => ro.observe(el));
+
+    // primera ejecución (MUY importante)
+    setTimeout(viewx_resize_all, 50);
+}
+
+window.addEventListener("DOMContentLoaded", attach);
+window.addEventListener("resize", viewx_resize_all);
+</script>
+
+
+
+</body>
+</html>
