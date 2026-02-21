@@ -58,7 +58,7 @@ body {
 
         .parent {
             display:grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, minmax(0, 1fr));
             width:100vw;
             height:100vh;
@@ -75,6 +75,7 @@ body {
 .div3 { grid-area: 3 / 1 / 4 / 2; }
 .div4 { grid-area: 2 / 2 / 3 / 3; }
 .div5 { grid-area: 3 / 2 / 4 / 3; }
+.div7 { grid-area: 1 / 3 / 4 / 4; }
 
 table Ellipsis
 th, td Ellipsis
@@ -117,6 +118,18 @@ th, td Ellipsis
                     font-size: 90px;
                     ">
                     World Happiness Report
+        </h1>
+        <h1 class = "title" style = "
+                    text-align: center; 
+                    font-size: 45px;
+                    ">
+                    Emmanuel Ascendra & Dawin Jimenez
+        </h1>
+        <h1 class = "title" style = "
+                    text-align: center; 
+                    font-size: 20px;
+                    ">
+                    Intro a la Ciencia de los Datos
         </h1>
     </div>
     
@@ -225,7 +238,7 @@ th, td Ellipsis
             <h1 style="font-size: 40px; margin: 0;">What happend</h1>
             <h1 style="font-size: 40px; margin: 0;">with Colombia?</h1>
 
-            <a href="https://ghostanalyst30.github.io/World-Happiness-Report/Notebooks/colombia.html">
+            <a href="https://ghostanalyst30.github.io/World-Happiness-Report/Notebooks/colombia_page.html">
                 <button class = "button_dataset" style="
                     background-color: #2D6A4F;
                     color: white;
@@ -366,7 +379,274 @@ th, td Ellipsis
     </div>
     
         </div>
-        </div><div class="div6 viewx-slot"></div>
+        </div><div class="div6 viewx-slot"></div><div class="div7 viewx-slot">
+        <div style="
+            background:#EEF7F0;
+            color:#1B4332;
+            border:1px solid #1B433222;
+            padding:14px;
+            border-radius:12px;
+            width:100%; height:100%;
+            box-sizing:border-box;
+            line-height:1.5;
+            overflow:auto;
+            font-family:Arial;
+        ">
+            
+    <div class="news-section">
+        <h2 class="news-title">📰 Noticias sobre Felicidad en Colombia</h2>
+
+        <div class="news-grid">
+            <!-- Noticia 1: Ranking de felicidad 2026 -->
+            <div class="news-card">
+                <a href="https://www.eje21.com.co/2025/03/felicidad-en-colombia/" target="_blank" class="news-link">
+                    <div class="news-image-container">
+                        <img src="https://via.placeholder.com/300x160/2D6A4F/ffffff?text=Felicidad+Colombia" 
+                             alt="Felicidad en Colombia" 
+                             class="news-image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-source">Eje21</span>
+                        <h3 class="news-headline">Colombia ocupa el puesto 61 en ranking mundial de felicidad</h3>
+                        <p class="news-excerpt">El país continúa su tendencia descendente: en 2018 estaba en el puesto 37, en 2023 cayó al 72 y ahora se ubica en el 61. Costa Rica y México lideran la región.</p>
+                        <div class="news-meta">
+                            <span class="news-date">📅 9 febrero 2026</span>
+                            <span class="news-read-more">Leer más →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 2: Prosperidad económica -->
+            <div class="news-card">
+                <a href="https://www.elcolombiano.com/amp/negocios/ranking-prosperidad-colombia-mitad-baja-america-latina-2025-NO33682359" target="_blank" class="news-link">
+                    <div class="news-image-container">
+                        <img src="https://via.placeholder.com/300x160/1B4332/ffffff?text=Prosperidad+Económica" 
+                             alt="Prosperidad económica" 
+                             class="news-image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-source">El Colombiano</span>
+                        <h3 class="news-headline">Colombia se desploma en ranking de prosperidad económica</h3>
+                        <p class="news-excerpt">El país ocupa el puesto 16 en América Latina con 25.87 puntos. Chile lidera la región con 43.19 puntos. La informalidad laboral (55-58%) y la inseguridad explican el rezago.</p>
+                        <div class="news-meta">
+                            <span class="news-date">📅 17 febrero 2026</span>
+                            <span class="news-read-more">Leer más →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 3: Calidad de vida 2026 -->
+            <div class="news-card">
+                <a href="https://www.lateja.cr/internacionales/estos-son-los-mejores-paises-de-america-latina/5MLCCVUW5RGLLEXZ5IJO6LNOMY/story/" target="_blank" class="news-link">
+                    <div class="news-image-container">
+                        <img src="https://via.placeholder.com/300x160/2D6A4F/ffffff?text=Calidad+de+Vida" 
+                             alt="Calidad de vida" 
+                             class="news-image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-source">La Teja</span>
+                        <h3 class="news-headline">Colombia en el puesto 8 de calidad de vida en Latinoamérica</h3>
+                        <p class="news-excerpt">Uruguay lidera la región, seguido por Costa Rica y Ecuador. El ranking evalúa poder adquisitivo, seguridad, salud y costo de vida.</p>
+                        <div class="news-meta">
+                            <span class="news-date">📅 18 enero 2026</span>
+                            <span class="news-read-more">Leer más →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 4: Ranking IA mejores países -->
+            <div class="news-card">
+                <a href="https://colombia.as.com/actualidad/le-pedimos-a-la-ia-que-haga-un-ranking-de-los-mejores-paises-para-vivir-en-latinoamerica-este-es-el-puesto-de-colombia-f202601-n/" target="_blank" class="news-link">
+                    <div class="news-image-container">
+                        <img src="https://via.placeholder.com/300x160/1B4332/ffffff?text=Ranking+IA" 
+                             alt="Ranking IA" 
+                             class="news-image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-source">AS Colombia</span>
+                        <h3 class="news-headline">Según IA, Colombia es el séptimo mejor país para vivir en Latinoamérica</h3>
+                        <p class="news-excerpt">Uruguay, Chile y Costa Rica lideran el ranking. Colombia destaca en potencial económico pero enfrenta retos en inseguridad e incertidumbre política.</p>
+                        <div class="news-meta">
+                            <span class="news-date">📅 25 enero 2026</span>
+                            <span class="news-read-more">Leer más →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 5: Comparación con Ecuador -->
+            <div class="news-card">
+                <a href="https://versus.com/en/colombia-vs-ecuador/world-happiness" target="_blank" class="news-link">
+                    <div class="news-image-container">
+                        <img src="https://via.placeholder.com/300x160/2D6A4F/ffffff?text=Colombia+vs+Ecuador" 
+                             alt="Colombia vs Ecuador" 
+                             class="news-image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-source">Versus</span>
+                        <h3 class="news-headline">Colombia vs Ecuador: ¿quién es más feliz?</h3>
+                        <p class="news-excerpt">Colombia obtiene 5.7 puntos frente a 5.6 de Ecuador en el Informe Mundial de Felicidad 2026. El análisis incluye bienestar, apoyo social e ingresos.</p>
+                        <div class="news-meta">
+                            <span class="news-date">📅 2026</span>
+                            <span class="news-read-more">Leer más →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Noticia 6: Pobres pero felices (artículo de contexto) -->
+            <div class="news-card">
+                <a href="https://www.eje21.com.co/2016/02/pobres-pero-felices/" target="_blank" class="news-link">
+                    <div class="news-image-container">
+                        <img src="https://via.placeholder.com/300x160/1B4332/ffffff?text=Pobres+pero+Felices" 
+                             alt="Pobres pero felices" 
+                             class="news-image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-source">Eje21 (Análisis)</span>
+                        <h3 class="news-headline">Pobres pero felices: la paradoja colombiana</h3>
+                        <p class="news-excerpt">A pesar de la devaluación y el aumento de la pobreza, los colombianos se declaran felices. Un análisis sobre el talante nacional y la resiliencia.</p>
+                        <div class="news-meta">
+                            <span class="news-date">📅 5 febrero 2016</span>
+                            <span class="news-read-more">Leer más →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    .news-section {
+        background: #EEF7F0;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 10px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .news-title {
+        color: #1B4332;
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #2D6A4F;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 20px;
+    }
+
+    .news-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        border: 1px solid #2D6A4F22;
+    }
+
+    .news-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .news-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    .news-image-container {
+        width: 100%;
+        height: 160px;
+        overflow: hidden;
+        background: #2D6A4F;
+    }
+
+    .news-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+
+    .news-card:hover .news-image {
+        transform: scale(1.05);
+    }
+
+    .news-content {
+        padding: 15px;
+    }
+
+    .news-source {
+        display: inline-block;
+        background: #2D6A4F;
+        color: white;
+        font-size: 12px;
+        padding: 3px 8px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .news-headline {
+        color: #1B4332;
+        font-size: 16px;
+        margin: 8px 0;
+        line-height: 1.4;
+        font-weight: bold;
+    }
+
+    .news-excerpt {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 8px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .news-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 8px;
+        border-top: 1px solid #eee;
+        font-size: 12px;
+    }
+
+    .news-date {
+        color: #888;
+    }
+
+    .news-read-more {
+        color: #2D6A4F;
+        font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .news-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .news-title {
+            font-size: 20px;
+        }
+    }
+    </style>
+    
+        </div>
+        </div>
 </div>
 
 <script>
