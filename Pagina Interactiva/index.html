@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historytelling Colombia 2011-2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Plotly CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <!-- Sección de introducción con parallax -->
+    <section class="intro-section">
+        <div class="intro-content">
+            <h1 class="animate-on-scroll">Happiness World Report</h1>
+            <p class="animate-on-scroll">2011 - 2024: Una década de transformaciones</p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Descubre la historia</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Sección del mapa interactivo -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Contexto Global</h2>
+            <div class="map-container" id="world-map"></div>
+            <div class="stats-preview animate-on-scroll">
+                <p class="global-insight">Durante este período, Colombia experimentó...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Título de Colombia con efecto -->
+    <section class="colombia-title-section">
+        <div class="colombia-title-container">
+            <h2 class="colombia-main-title animate-on-scroll">COLOMBIA</h2>
+            <div class="title-decoration"></div>
+        </div>
+    </section>
+
+    <!-- Secciones anuales (se generarán dinámicamente con JS) -->
+    <div id="timeline-container"></div>
+
+    <!-- Footer con resumen -->
+    <footer class="timeline-footer">
+        <div class="footer-content">
+            <h3>2011 - 2024: Un viaje por la historia</h3>
+            <p>Explora los eventos que marcaron a Colombia</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

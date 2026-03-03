@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happiness Dataset Report · Colombia 2011-2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Plotly CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menú de navegación flotante -->
+    <nav class="floating-menu" id="floatingMenu">
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="menu-items" id="menuItems">
+            <li><a href="#inicio" class="menu-link active" data-section="inicio"><i class="fas fa-home"></i> <span>Inicio</span></a></li>
+            <li><a href="#mapa-mundi" class="menu-link" data-section="mapa-mundi"><i class="fas fa-globe-americas"></i> <span>Contexto Global</span></a></li>
+            <li><a href="#colombia-timeline" class="menu-link" data-section="colombia-timeline"><i class="fas fa-chart-line"></i> <span>Colombia 2011-2024</span></a></li>
+            <li><a href="#colombia-2024" class="menu-link" data-section="colombia-2024"><i class="fas fa-calendar-check"></i> <span>Colombia 2024</span></a></li>
+            <li><a href="#paises-felices" class="menu-link" data-section="paises-felices"><i class="fas fa-smile"></i> <span>Países más felices</span></a></li>
+            <li><a href="#paises-infelices" class="menu-link" data-section="paises-infelices"><i class="fas fa-frown"></i> <span>Países menos felices</span></a></li>
+            <li><a href="#conclusiones" class="menu-link" data-section="conclusiones"><i class="fas fa-star"></i> <span>Conclusiones</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- SECCIÓN 1: INICIO -->
+    <section id="inicio" class="section inicio-section" data-speed="0.3">
+        <div class="parallax-bg" style="background-image: radial-gradient(circle at 30% 50%, rgba(255,107,107,0.1) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(78,205,196,0.1) 0%, transparent 50%);"></div>
+        <div class="inicio-content">
+            <h1 class="glitch-title" data-text="Happiness Dataset Report">Happiness Dataset Report</h1>
+            <p class="subtitle">Colombia · 2011 - 2024</p>
+            <p class="description">Una década de transformaciones, retos y esperanza</p>
+            <div class="scroll-hint">
+                <span>Descubre la historia</span>
+                <div class="mouse-scroll"></div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: MAPA MUNDI CORREGIDO -->
+    <section id="mapa-mundi" class="section map-section" data-speed="0.5">
+        <div class="parallax-bg" style="background: linear-gradient(45deg, #1a1a2e 0%, #16213e 100%);"></div>
+        <div class="container">
+            <h2 class="section-title reveal">Contexto Global</h2>
+            <div class="map-wrapper reveal">
+                <div id="world-map" class="map-container"></div>
+            </div>
+            <div class="map-description reveal">
+                <p>El <strong>World Happiness Report</strong> mide la felicidad basándose en factores como PIB per cápita, apoyo social, esperanza de vida saludable, libertad, generosidad y percepción de corrupción. Durante 2011-2024, Colombia ha mostrado una resiliencia notable en el ranking global, oscilando entre los puestos 31 y 78.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2.6: GRÁFICAS COMPARATIVAS COLOMBIA VS MUNDO -->
+    <section id="colombia-vs-mundo" class="section comparativas-section" data-speed="0.5">
+        <div class="parallax-bg" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);"></div>
+        <div class="container">
+            <h2 class="section-title reveal">Colombia vs Promedio Mundial</h2>
+            <p class="graficas-intro reveal">¿Cómo se compara Colombia con el resto del mundo?</p>
+            
+            <div class="comparativas-grid">
+                <div class="grafica-container reveal" id="grafica-comparativa-score">
+                    <h3 class="grafica-title">
+                        <i class="fas fa-chart-line" style="color: #ffd700;"></i>
+                        Puntaje de Felicidad
+                    </h3>
+                    <div id="chart-colombia-vs-mundo-score" class="grafica"></div>
+                    <div class="comparativa-leyenda">
+                        <span class="leyenda-item colombia">Colombia</span>
+                        <span class="leyenda-item mundo">Promedio Mundial</span>
+                    </div>
+                </div>
+                
+                <div class="grafica-container reveal" id="grafica-comparativa-rank">
+                    <h3 class="grafica-title">
+                        <i class="fas fa-trophy" style="color: #ffd700;"></i>
+                        Ranking Mundial
+                    </h3>
+                    <div id="chart-colombia-vs-mundo-rank" class="grafica"></div>
+                    <div class="comparativa-leyenda">
+                        <span class="leyenda-item colombia">Colombia</span>
+                        <span class="leyenda-item mundo">Posición Promedio</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="insights-container reveal">
+                <div class="insight-card">
+                    <i class="fas fa-arrow-up" style="color: #4ecdc4;"></i>
+                    <h4>Colombia vs Mundo 2024</h4>
+                    <p>Colombia (6.004) está muy por encima del promedio mundial (5.575)</p>
+                </div>
+                <div class="insight-card">
+                    <i class="fas fa-chart-bar" style="color: #ffd700;"></i>
+                    <h4>Brecha de Felicidad</h4>
+                    <p>Colombia supera al promedio mundial en +0.43 puntos</p>
+                </div>
+                <div class="insight-card">
+                    <i class="fas fa-ranking-star" style="color: #ce1126;"></i>
+                    <h4>Posición Relativa</h4>
+                    <p>Colombia (#61) está mejor que el promedio mundial (#74)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: COLOMBIA TIMELINE -->
+    <section id="colombia-timeline" class="section colombia-timeline-section" data-speed="0.4">
+        <div class="parallax-bg" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a3b3b 50%, #0a0a0a 100%);"></div>
+        <div class="colombia-title-container reveal">
+            <h2 class="colombia-main-title" data-text="COLOMBIA">COLOMBIA</h2>
+            <div class="title-decoration">
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="timeline-controls reveal">
+            <p class="timeline-intro">Desliza para explorar cada año · <i class="fas fa-arrow-right"></i></p>
+        </div>
+        
+        <div class="years-horizontal-scroll" id="yearsHorizontalScroll"></div>
+    </section>
+
+    <!-- SECCIÓN 4: COLOMBIA 2024 -->
+    <section id="colombia-2024" class="section colombia2024-section" data-speed="0.6">
+        <div class="parallax-bg" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);"></div>
+        <div class="container">
+            <h2 class="section-title reveal">Colombia en 2024</h2>
+            <div class="colombia2024-grid">
+                <div class="stats2024 reveal">
+                    <div class="stat-big">
+                        <span class="stat-number">52.9M</span>
+                        <span class="stat-label">Población</span>
+                    </div>
+                    <div class="stat-big">
+                        <span class="stat-number">2.1%</span>
+                        <span class="stat-label">Crecimiento PIB</span>
+                    </div>
+                    <div class="stat-big">
+                        <span class="stat-number">10.3%</span>
+                        <span class="stat-label">Desempleo</span>
+                    </div>
+                    <div class="stat-big">
+                        <span class="stat-number">6.0</span>
+                        <span class="stat-label">Índice Felicidad</span>
+                    </div>
+                </div>
+                <div class="images-overlay reveal">
+                    <div class="image-stack">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXMiZBtW2ngYSai0DsV0aFA3CuBIJoFffjLQ&s" alt="Colombia 2024" class="stack-img img1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS3CmYWTq28O14dvs5gKte54jv7ufEsfYh-A&s" alt="Colombia naturaleza" class="stack-img img2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpTDd_w09IdDCfKs4ZZ_3kuXSxIsDrDGY9vA&s" alt="Ciudad Colombia" class="stack-img img3">
+                    </div>
+                    <p class="image-caption">Colombia: transición energética, reformas y biodiversidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: PAÍSES MÁS FELICES -->
+    <section id="paises-felices" class="section happy-countries-section" data-speed="0.3">
+        <div class="parallax-bg" style="background: radial-gradient(circle at 30% 50%, rgba(255,215,0,0.1) 0%, transparent 50%), radial-gradient(circle at 70% 50%, rgba(78,205,196,0.1) 0%, transparent 50%);"></div>
+        <div class="container">
+            <h2 class="section-title reveal">Países más felices del mundo</h2>
+            <div class="ruleta-container">
+                <div class="ruleta-track infinite-scroll" id="ruletaHappyTrack"></div>
+            </div>
+            <div class="data-note reveal">
+                <i class="fas fa-database"></i> Datos simulados basados en World Happiness Report 2024 · Haz clic en cualquier país para ver información detallada
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6: PAÍSES MENOS FELICES -->
+    <section id="paises-infelices" class="section unhappy-countries-section" data-speed="0.4">
+        <div class="parallax-bg" style="background: radial-gradient(circle at 30% 50%, rgba(206,17,38,0.1) 0%, transparent 50%), radial-gradient(circle at 70% 50%, rgba(78,205,196,0.1) 0%, transparent 50%);"></div>
+        <div class="container">
+            <h2 class="section-title reveal">Países menos felices</h2>
+            <div class="ruleta-container">
+                <div class="ruleta-track infinite-scroll" id="ruletaUnhappyTrack"></div>
+            </div>
+            <div class="data-note reveal">
+                <i class="fas fa-database"></i> Datos simulados basados en World Happiness Report 2024 · Haz clic en cualquier país para ver información detallada
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 7: CONCLUSIONES -->
+    <section id="conclusiones" class="section conclusiones-section" data-speed="0.5">
+        <div class="parallax-bg" style="background: linear-gradient(135deg, #2b2b2b, #1f1f1f);"></div>
+        <div class="container">
+            <h2 class="section-title reveal">Conclusiones: Un viaje por la felicidad</h2>
+            <div class="conclusiones-grid">
+                <div class="conclusion-card reveal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIA4pCgLrwXbImaGNJI76k2_5o08nSrr9vsA&s" alt="Resiliencia">
+                    <h3>Resiliencia colombiana</h3>
+                    <p>A pesar de los desafíos, Colombia se mantiene en el top 50 de felicidad, destacando en apoyo social y libertad.</p>
+                </div>
+                <div class="conclusion-card reveal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7IFA4prgyblllK4i9PdVlQdswVKoFBj_Gog&s" alt="Transformación">
+                    <h3>Transformación social</h3>
+                    <p>Los procesos de paz y las reformas han impactado positivamente la percepción de bienestar.</p>
+                </div>
+                <div class="conclusion-card reveal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5p0LmuI1hiV2VaM_YBxMK17AT4Wueg8sU1A&s" alt="Futuro">
+                    <h3>Desafíos 2024+</h3>
+                    <p>La transición energética y la equidad social serán claves para sostener la felicidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>Happiness Dataset Report · Colombia 2011-2024 · Storytelling interactivo</p>
+        <p>Emmanuel Ascendra Perez · Dawin Jimenez Pombo</p>
+    </footer>
+
+    <!-- Overlay para información detallada de países -->
+    <div id="countryInfoOverlay" class="country-info-overlay">
+        <div class="overlay-content">
+            <button class="close-overlay"><i class="fas fa-times"></i></button>
+            <div id="countryInfoContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
