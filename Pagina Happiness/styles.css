@@ -52,8 +52,8 @@ body {
 }
 
 .section {
-    min-height: 10vh;
-    padding: 20px 20px;
+    min-height: 80vh;
+    padding: 80px 20px;
     position: relative;
     display: flex;
     align-items: center;
