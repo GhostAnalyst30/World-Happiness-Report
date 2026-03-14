@@ -1,0 +1,30 @@
+---
+title: "Happiness Dataset Report · Colombia 2011–2024"
+author: 
+  - "Emmanuel Ascendra Perez"
+  - "Dawin Jimenez Pombo"
+date: "Marzo 2026"
+format: pdf
+---
+
+**Emmanuel Ascendra Perez**  
+<eascendra@utb.edu.co>  
+Universidad Tecnológica de Bolívar  
+
+**Dawin Jimenez Pombo**  
+<dpombo@utb.edu.co>  
+Universidad Tecnológica de Bolívar  
+
+---
+
+## Documento descriptivo del proyecto  
+
+La página **Happiness Dataset Report** es un storyteller interactivo que explora la evolución del índice de felicidad en Colombia entre 2011 y 2024, en el contexto del *World Happiness Report*. Todo esto con apoyo de la IA, más específicamente **DeepSeek**.
+
+La página se encuentra publicada y accesible en el siguiente enlace:
+
+🔗 **[https://ghostanalyst30.github.io/World-Happiness-Report/Pagina%20Happiness/index.html](https://ghostanalyst30.github.io/World-Happiness-Report/Pagina%20Happiness/index.html)**
+
+---
+
+*Cartagena · Marzo 2026*
